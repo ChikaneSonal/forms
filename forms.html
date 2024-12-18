@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        .container{
+            height:900px;
+            width:600px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(62, 158, 196, 0.295);
+            align-items: center;
+            justify-content: center;
+            margin:10px;
+            margin-left: 350px;
+            border-radius: 10%;
+            border: 1px solid rgb(204, 37, 148);
+            box-shadow: 0 0 100px rgba(0, 0, 0, 0.3); 
+            
+        }
+        h1{
+            margin-left: 50px;
+            color: rgb(0, 0, 0);
+            text-decoration: underline;
+        }
+        form{
+            font-size: 20px;
+        }
+        button {
+            font-size: 18px;               
+            color: rgb(5, 4, 4);                  
+            background-color: rgb(0, 123, 255); 
+            border: none;                  
+            border-radius: 5px;            
+            padding: 10px 20px;            
+            margin-left: 60px;             
+            
+        }
+        input[type=text] {
+            border: 2px solid rgb(19, 12, 12);
+            border-radius: 4px;
+            }
+        input[type=email] {
+            border: 2px solid rgb(19, 12, 12);
+            border-radius: 4px;
+            }
+        input[type=password] {
+            border: 2px solid rgb(19, 12, 12);
+            border-radius: 4px;
+            }
+        input[type=link] {
+            border: 2px solid rgb(19, 12, 12);
+            border-radius: 4px;
+            }
+        input{
+            text-align: center;
+        }
+
+        
+        button:hover {
+            background-color: rgb(0, 100, 200); 
+        }
+
+    </style>
+</head>
+<html>
+    
+    <body>
+        <div class="container">
+            <h1>Register Here</h1>
+            <form>
+                <label for fname> first Name : </label><br>
+                <input type="text" required placeholder="firstName" size="40"> <br><br>
+                <label for lname> last Name : </label><br>
+                <input type="text" placeholder="lastname" size="40"> <br><br>
+                <label for tname> Email :</label><br>
+                <input type="email" placeholder="Email" size="40"><br><br>
+                <label for zname> password :</label><br>
+                <input type="password" placeholder="Password" size="40"><br><br>
+                <label for mname> contact :</label><br>
+                <input type="text" placeholder="contact" size="40"><br><br>
+                <label for="age"> Date of Birth : </label><br>
+                <input type="date"><br><br>
+                <label for pname> stream :</label><br>
+                <input type="radio" id="Bsc" name="stream" value="Bsc">
+                <label for="Bsc">Bsc</label>
+                <input type="radio" id="Bcom" name="stream" value="Bcom">
+                <label for="Bcom">Bcom</label>
+                <input type="radio" id="BAF" name="stream" value="BAf">
+                <label for="BAf">BAF</label><br><br>
+                <label for sname> hobbies :</label><br>
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">reading</label>
+                <input type="checkbox" id="dancing" name="hobbies" value="dancing">
+                <label for="dancing">dancing</label>
+                <input type="checkbox" id="travel" name="hobbies" value="travel">
+                <label for="travel">travel</label>
+                <input type="checkbox" id="other" name="hobbies" value="other">
+                <label for="other">other</label><br><br>
+                <label for="class"> choose class :</label><br>
+                <select name="class">
+                    <option value="fY">First Year</option>
+                    <option value="SY">second Year</option>
+                    <option value="TY">Third Year</option>
+    
+                </select><br><br>
+                <label for="link"> linkdn profile :</label><br>
+                <input type="link" placeholder="linkdn profile" size="40"><br><br>
+                
+    
+    
+                <label for uname> upload result : </label><br>
+                <input type="file" id="myfile" accept=".pdf , image/png"> <br><br>
+                <button>SUBMIT</button>
+                </form>
+        </div>
+       
+    </body>
+</html>
